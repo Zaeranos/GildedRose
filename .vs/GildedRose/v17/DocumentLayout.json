@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Git\\KatoenNatie\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E9B2B641-EF32-484B-8255-AA7AE68231D5}|Solution Items{E9B2B641-EF32-484B-8255-AA7AE68231D5}|C:\\Git\\KatoenNatie\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{E9B2B641-EF32-484B-8255-AA7AE68231D5}|Solution Items{E9B2B641-EF32-484B-8255-AA7AE68231D5}|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD4715A2-532E-4C74-BC40-36EE64F61FCA}|src\\GildedRose.Tests\\GildedRose.Tests.csproj|C:\\Git\\KatoenNatie\\src\\gildedrose.tests\\testassemblytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD4715A2-532E-4C74-BC40-36EE64F61FCA}|src\\GildedRose.Tests\\GildedRose.Tests.csproj|solutionrelative:src\\gildedrose.tests\\testassemblytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8B88B1C-EDE3-463E-AE8D-21A915B514F5}|.build{B8B88B1C-EDE3-463E-AE8D-21A915B514F5}|C:\\Git\\KatoenNatie\\build.bat||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{B8B88B1C-EDE3-463E-AE8D-21A915B514F5}|.build{B8B88B1C-EDE3-463E-AE8D-21A915B514F5}|solutionrelative:build.bat||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8B88B1C-EDE3-463E-AE8D-21A915B514F5}|.build{B8B88B1C-EDE3-463E-AE8D-21A915B514F5}|C:\\Git\\KatoenNatie\\tasks.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{B8B88B1C-EDE3-463E-AE8D-21A915B514F5}|.build{B8B88B1C-EDE3-463E-AE8D-21A915B514F5}|solutionrelative:tasks.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 216,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TestAssemblyTests.cs",
+              "DocumentMoniker": "C:\\Git\\KatoenNatie\\src\\GildedRose.Tests\\TestAssemblyTests.cs",
+              "RelativeDocumentMoniker": "src\\GildedRose.Tests\\TestAssemblyTests.cs",
+              "ToolTip": "C:\\Git\\KatoenNatie\\src\\GildedRose.Tests\\TestAssemblyTests.cs",
+              "RelativeToolTip": "src\\GildedRose.Tests\\TestAssemblyTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T18:10:29.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Git\\KatoenNatie\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Git\\KatoenNatie\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADcAAABuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-05-29T18:00:21.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "tasks.ps1",
+              "DocumentMoniker": "C:\\Git\\KatoenNatie\\tasks.ps1",
+              "RelativeDocumentMoniker": "tasks.ps1",
+              "ToolTip": "C:\\Git\\KatoenNatie\\tasks.ps1",
+              "RelativeToolTip": "tasks.ps1",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-29T17:56:19.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "build.bat",
+              "DocumentMoniker": "C:\\Git\\KatoenNatie\\build.bat",
+              "RelativeDocumentMoniker": "build.bat",
+              "ToolTip": "C:\\Git\\KatoenNatie\\build.bat",
+              "RelativeToolTip": "build.bat",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000614|",
+              "WhenOpened": "2024-05-29T17:53:11.904Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -52,6 +52,9 @@ start refactoring.
 
 ![alt text](images/build_output.png "Good Build Output")
 
+If you get a bunch of SSL/TLS errors than you may want to update the
+Nuget.exe file, by downloading the latest commandline tool from: [nuget.org](https://www.nuget.org/downloads).
+
 ## Who, What, Why?
 Who: [@TerryHughes](https://twitter.com/TerryHughes), [@NotMyself](https://twitter.com/NotMyself)
 

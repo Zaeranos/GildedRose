@@ -60,7 +60,10 @@
     <Compile Include="InitiallyRequestItems.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestAssemblyTests.cs" />
-    <Compile Include="UpgradingItemQuality.cs" />
+    <Compile Include="UpdatingAgedBrieItemQuality.cs" />
+    <Compile Include="UpdatingBackstagePassItemQuality.cs" />
+    <Compile Include="UpdatingLegendaryItemQuality.cs" />
+    <Compile Include="UpdatingStandardItemQuality.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

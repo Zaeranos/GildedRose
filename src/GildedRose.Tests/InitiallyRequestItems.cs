@@ -1,4 +1,5 @@
-﻿using GildedRose.Console.Application;
+﻿using GildedRose.Console;
+using GildedRose.Console.Application;
 using Xunit;
 
 namespace GildedRose.Tests
@@ -15,7 +16,7 @@ namespace GildedRose.Tests
         public void Getting_The_Items_To_Check_Initial_Sellin_Values(string name, int expectedSellIn)
         {
             // Arrange
-            var inventory = new InventoryCollection();
+            var inventory = new InventoryHandler(Program.GetInitialItems());
 
             // Act
             var actual = inventory.GetItemByName(name);
@@ -35,7 +36,7 @@ namespace GildedRose.Tests
         public void Getting_The_Items_To_Check_Initial_Quality_Values(string name, int expectedQuality)
         {
             // Arrange
-            var inventory = new InventoryCollection();
+            var inventory = new InventoryHandler(Program.GetInitialItems());
 
             // Act
             var actual = inventory.GetItemByName(name);

@@ -43,7 +43,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application\IInventory.cs" />
-    <Compile Include="Application\InventoryCollection.cs" />
+    <Compile Include="Application\InventoryHandler.cs" />
+    <Compile Include="Entities\AgedBrieItem.cs" />
+    <Compile Include="Entities\BackstagePassItem.cs" />
+    <Compile Include="Entities\ConjuredItem.cs" />
+    <Compile Include="Entities\ItemWrapper.cs" />
+    <Compile Include="Entities\LegacyItem.cs" />
+    <Compile Include="Entities\LegendaryItem.cs" />
+    <Compile Include="Entities\RegularDecreasingQualityItem.cs" />
+    <Compile Include="Entities\StandardItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

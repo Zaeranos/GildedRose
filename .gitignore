@@ -20,6 +20,7 @@ bld/
 build_output/
 .build/
 
+
 # Roslyn cache directories
 *.ide/
 
@@ -196,7 +197,8 @@ FakesAssemblies/
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -230,3 +232,9 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+/.vs/GildedRose/DesignTimeBuild/.dtbcache.v2
+/.vs/GildedRose/FileContentIndex/dfe1a4b1-b519-4682-bbe6-61959404e1e4.vsidx
+/.vs/GildedRose/FileContentIndex/edf11a18-82af-4a7d-ab05-44823f097154.vsidx
+/.vs/*
+/.vs/GildedRose/v17/DocumentLayout.json
+/.vs/GildedRose/FileContentIndex/692c275d-bf43-4c11-b342-1d80e1022f92.vsidx

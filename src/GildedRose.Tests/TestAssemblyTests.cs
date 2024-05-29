@@ -10,4 +10,5 @@ namespace GildedRose.Tests
             Assert.True(true);
         }
     }
+
 }

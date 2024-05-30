@@ -1,38 +1,36 @@
 ﻿namespace GildedRose.Console.Entities
 {
+    using static GeneralApplicationConstants;
+
     public class RegularDecreasingQualityItem : ItemWrapper
     {
-        private const int MinimumQuality = 0;
-        private const int LowerByADayAmount = 1;
-        private const int MinimumSellInDay = 0;
-
         private readonly int _standardQualityDecreaseAmount;
-        private readonly int _doubleQualityDecreaseAmount;
+        private readonly int _passedByDateQualityDecreaseAmount;
         
         public RegularDecreasingQualityItem(
             string name,
             int initialSellInDays,
             int intialCurrentQuality,
             int standardQualityDecreaseAmount,
-            int doubleQualityDecreaseAmount) 
+            int passedByDateQualityDecreaseAmount) 
             : base(name, initialSellInDays, intialCurrentQuality)
         {
             _standardQualityDecreaseAmount = standardQualityDecreaseAmount;
-            _doubleQualityDecreaseAmount = doubleQualityDecreaseAmount;
+            _passedByDateQualityDecreaseAmount = passedByDateQualityDecreaseAmount;
         }
 
         public override void UpdateCurrentQuality()
         {
-            CurrentQuality -= SellInDays > MinimumSellInDay 
+            CurrentQuality -= SellInDays > Minimum_SellIn_Day_Limit
                 ? _standardQualityDecreaseAmount
-                : _doubleQualityDecreaseAmount;
+                : _passedByDateQualityDecreaseAmount;
 
-            if (CurrentQuality < MinimumQuality)
+            if (CurrentQuality < Minimum_Quality_Value)
             {
-                CurrentQuality = MinimumQuality;
+                CurrentQuality = Minimum_Quality_Value;
             }
 
-            SellInDays -= LowerByADayAmount;
+            SellInDays -= Decrease_SellInDays_Amount;
         }
     }
 

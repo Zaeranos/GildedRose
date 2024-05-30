@@ -1,13 +1,12 @@
 ﻿namespace GildedRose.Console.Entities
 {
+    using static GeneralApplicationConstants;
+
     public class AgedBrieItem : ItemWrapper
     {
-        private const int StandardQualityIncreaseAmount = 1;
-        private const int DoubleQualityIncreaseAmount = 2;
-        private const int MaximumQualityLimit = 50;
-
-        private const int LowerByADayAmount = 1;
-        private const int MinimumSellInDay = 0;
+        private const int Standard_Quality_Increase_Amount = 1;
+        private const int Passed_By_Date_Quality_Increase_Amount = 2;
+        
 
         public AgedBrieItem(int initialSellInDays, int intialCurrentQuality) 
             : base("Aged Brie", initialSellInDays, intialCurrentQuality)
@@ -16,14 +15,17 @@
 
         public override void UpdateCurrentQuality()
         {
-            if (CurrentQuality < MaximumQualityLimit)
+            
+            CurrentQuality += SellInDays > Minimum_SellIn_Day_Limit
+                ? Standard_Quality_Increase_Amount
+                : Passed_By_Date_Quality_Increase_Amount;
+
+            if (CurrentQuality > Maximum_Quality_Value)
             {
-                CurrentQuality += SellInDays > MinimumSellInDay
-                    ? StandardQualityIncreaseAmount
-                    : DoubleQualityIncreaseAmount;
+                CurrentQuality = Maximum_Quality_Value;
             }
 
-            SellInDays -= LowerByADayAmount;
+            SellInDays -= Decrease_SellInDays_Amount;
         }
     }
 }

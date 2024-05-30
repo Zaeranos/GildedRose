@@ -13,11 +13,11 @@ namespace GildedRose.Tests
         public void UpdatingItemQuality_For_Legendary_Items_Should_Never_Lower_The_Quality()
         {
             // Arrange
-            var expectedQuality = 10;
+            var expectedQuality = 80;
 
             var inventory = new InventoryHandler(new List<ItemWrapper>()
             {
-                new LegendaryItem(10, expectedQuality)
+                new LegendaryItem()
             });
 
 
@@ -34,11 +34,11 @@ namespace GildedRose.Tests
         public void UpdatingItemQuality_For_Legendary_Items_Should_Never_Lower_The_SellInDays()
         {
             // Arrange
-            var expectedSellInDays = 10;
+            var expectedSellInDays = 0;
 
             var inventory = new InventoryHandler(new List<ItemWrapper>()
             {
-                new LegendaryItem(expectedSellInDays, 10)
+                new LegendaryItem()
             });
 
 

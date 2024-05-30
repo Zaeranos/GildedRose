@@ -47,6 +47,7 @@
     <Compile Include="Entities\AgedBrieItem.cs" />
     <Compile Include="Entities\BackstagePassItem.cs" />
     <Compile Include="Entities\ConjuredItem.cs" />
+    <Compile Include="Entities\GeneralApplicationConstants.cs" />
     <Compile Include="Entities\ItemWrapper.cs" />
     <Compile Include="Entities\LegacyItem.cs" />
     <Compile Include="Entities\LegendaryItem.cs" />

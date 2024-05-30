@@ -1,17 +1,17 @@
 ﻿namespace GildedRose.Console.Entities
 {
+    using static GeneralApplicationConstants;
+
     public class BackstagePassItem : ItemWrapper
     {
-        private const int StandardQualityIncreaseAmount = 1;
-        private const int NearConcertQualityIncreaseAmount = 2;
-        private const int LastMinuteConcertQualityIncreaseAmount = 3;
-        private const int MaximumQualityLimit = 50;
-        private const int PassedConcertQuality = 0;
-
-        private const int LowerByADayAmount = 1;
-        private const int NearConcertDaysLimit = 11;
-        private const int LastMinuteConcertDaysLimit = 6;
-        private const int ConcertSellInDayLimit = 0;
+        private const int Standard_Quality_Increase_Amount = 1;
+        private const int Near_Concert_Quality_Increase_Amount = 2;
+        private const int Last_Minute_Concert_Quality_Increase_Amount = 3;
+        private const int Passed_Concert_Quality_Value = 0;
+        
+        private const int Near_Concert_Days_Limit = 11;
+        private const int Last_Minute_Concert_Days_Limit = 6;
+        private const int Concert_Passed_By_Day_Limit = 0;
 
         public BackstagePassItem(string name, int initialSellInDays, int intialCurrentQuality) 
             : base(name, initialSellInDays, intialCurrentQuality)
@@ -20,29 +20,29 @@
 
         public override void UpdateCurrentQuality()
         {
-            if (SellInDays < ConcertSellInDayLimit)
+            if (SellInDays < Concert_Passed_By_Day_Limit)
             {
-                CurrentQuality = PassedConcertQuality;
+                CurrentQuality = Passed_Concert_Quality_Value;
             }
-            else if (SellInDays < LastMinuteConcertDaysLimit)
+            else if (SellInDays < Last_Minute_Concert_Days_Limit)
             {
-                CurrentQuality += LastMinuteConcertQualityIncreaseAmount;
+                CurrentQuality += Last_Minute_Concert_Quality_Increase_Amount;
             }
-            else if (SellInDays < NearConcertDaysLimit)
+            else if (SellInDays < Near_Concert_Days_Limit)
             {
-                CurrentQuality += NearConcertQualityIncreaseAmount;
+                CurrentQuality += Near_Concert_Quality_Increase_Amount;
             }
             else
             { 
-                CurrentQuality += StandardQualityIncreaseAmount;
+                CurrentQuality += Standard_Quality_Increase_Amount;
             }
 
-            if (CurrentQuality > MaximumQualityLimit)
+            if (CurrentQuality > Maximum_Quality_Value)
             {
-                CurrentQuality = MaximumQualityLimit;
+                CurrentQuality = Maximum_Quality_Value;
             }
 
-            SellInDays -= LowerByADayAmount;
+            SellInDays -= Decrease_SellInDays_Amount;
         }
     }
 }

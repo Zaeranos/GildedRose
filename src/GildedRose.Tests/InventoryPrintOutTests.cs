@@ -16,7 +16,7 @@ namespace GildedRose.Tests
         public void Print_Out_Initial_Inventory_State()
         {
             // Arrange
-            var inventory = new InventoryHandler(Program.GetInitialItems());
+            var inventory = new InventoryHandler(InitialInventoryCollection.GetInitialItems());
 
             // Act
             var actual = inventory.PrintInventory();
@@ -29,7 +29,7 @@ namespace GildedRose.Tests
         public void Print_Out_Inventory_State_After_One_Day()
         {
             // Arrange
-            var inventory = new InventoryHandler(Program.GetInitialItems());
+            var inventory = new InventoryHandler(InitialInventoryCollection.GetInitialItems());
             inventory.UpdateQuality();
 
             // Act
@@ -43,7 +43,7 @@ namespace GildedRose.Tests
         public void Print_Out_Inventory_State_After_20_Days()
         {
             // Arrange
-            var inventory = new InventoryHandler(Program.GetInitialItems());
+            var inventory = new InventoryHandler(InitialInventoryCollection.GetInitialItems());
             inventory.UpdateQuality();
             inventory.UpdateQuality();
             inventory.UpdateQuality();

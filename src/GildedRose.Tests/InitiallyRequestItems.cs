@@ -16,7 +16,7 @@ namespace GildedRose.Tests
         public void Getting_The_Items_To_Check_Initial_Sellin_Values(string name, int expectedSellIn)
         {
             // Arrange
-            var inventory = new InventoryHandler(Program.GetInitialItems());
+            var inventory = new InventoryHandler(InitialInventoryCollection.GetInitialItems());
 
             // Act
             var actual = inventory.GetItemByName(name);
@@ -36,7 +36,7 @@ namespace GildedRose.Tests
         public void Getting_The_Items_To_Check_Initial_Quality_Values(string name, int expectedQuality)
         {
             // Arrange
-            var inventory = new InventoryHandler(Program.GetInitialItems());
+            var inventory = new InventoryHandler(InitialInventoryCollection.GetInitialItems());
 
             // Act
             var actual = inventory.GetItemByName(name);
@@ -46,10 +46,5 @@ namespace GildedRose.Tests
             Assert.Equal(expectedQuality, actual.Quality);
         }
     }
-
-    //public class UpgradingItemQuality
-    //{
-    //    [Fact(DisplayName = "Given first start up, when ")]
-    //}
 
 }

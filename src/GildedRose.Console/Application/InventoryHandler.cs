@@ -6,7 +6,7 @@ using GildedRose.Console.Entities;
 namespace GildedRose.Console.Application
 {
 
-    public class InventoryHandler : IInventory
+    public class InventoryHandler : IInventory, IItemCollection
     {
         private readonly IList<ItemWrapper> _items;
 
